@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181203 14:14:59.272">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181203 15:58:00.114">
 <suite id="s1" name="Amazon" source="C:\development\robot-scripts\amazon\tests\amazon.robot">
 <test id="s1-t1" name="User must sign in to check out">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,16 +8,16 @@
 <arg>http://www.amazon.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20181203 14:14:59.644" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
-<status status="PASS" starttime="20181203 14:14:59.643" endtime="20181203 14:15:09.271"></status>
+<msg timestamp="20181203 15:58:00.330" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20181203 15:58:00.330" endtime="20181203 15:58:08.288"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20181203 14:15:12.277" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20181203 14:15:09.276" endtime="20181203 14:15:12.277"></status>
+<msg timestamp="20181203 15:58:11.293" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20181203 15:58:08.291" endtime="20181203 15:58:11.293"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -25,49 +25,49 @@
 <arg>id=twotabsearchtextbox</arg>
 <arg>Ciri Figure</arg>
 </arguments>
-<msg timestamp="20181203 14:15:12.278" level="INFO">Typing text 'Ciri Figure' into text field 'id=twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20181203 14:15:12.277" endtime="20181203 14:15:13.491"></status>
+<msg timestamp="20181203 15:58:11.295" level="INFO">Typing text 'Ciri Figure' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20181203 15:58:11.294" endtime="20181203 15:58:11.638"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20181203 14:15:16.494" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20181203 14:15:13.492" endtime="20181203 14:15:16.494"></status>
+<msg timestamp="20181203 15:58:14.639" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20181203 15:58:11.639" endtime="20181203 15:58:14.639"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
 </arguments>
-<msg timestamp="20181203 14:15:16.495" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20181203 14:15:16.494" endtime="20181203 14:15:18.758"></status>
+<msg timestamp="20181203 15:58:14.640" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20181203 15:58:14.639" endtime="20181203 15:58:19.700"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20181203 14:15:21.760" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20181203 14:15:18.758" endtime="20181203 14:15:21.760"></status>
+<msg timestamp="20181203 15:58:22.703" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20181203 15:58:19.701" endtime="20181203 15:58:22.703"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
-<arg>css=#result_0 &gt; div &gt; div.a-fixed-left-grid &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a</arg>
+<arg>xpath=//*[@id="result_0"]/div/div[2]/div/div[2]/div[1]/div[1]/a</arg>
 </arguments>
-<msg timestamp="20181203 14:15:21.761" level="INFO">Clicking link 'css=#result_0 &gt; div &gt; div.a-fixed-left-grid &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a'.</msg>
-<status status="PASS" starttime="20181203 14:15:21.761" endtime="20181203 14:15:25.073"></status>
+<msg timestamp="20181203 15:58:22.704" level="INFO">Clicking link 'xpath=//*[@id="result_0"]/div/div[2]/div/div[2]/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20181203 15:58:22.704" endtime="20181203 15:58:26.768"></status>
 </kw>
 <doc>This is some basic info about the test</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" starttime="20181203 14:14:59.642" endtime="20181203 14:15:25.074" critical="yes"></status>
+<status status="PASS" starttime="20181203 15:58:00.328" endtime="20181203 15:58:26.771" critical="yes"></status>
 </test>
 <doc>This is some basic info about the whole suite</doc>
-<status status="PASS" starttime="20181203 14:14:59.278" endtime="20181203 14:15:25.077"></status>
+<status status="PASS" starttime="20181203 15:58:00.119" endtime="20181203 15:58:26.774"></status>
 </suite>
 <statistics>
 <total>

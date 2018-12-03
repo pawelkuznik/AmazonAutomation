@@ -1,1 +1,0 @@
-robot -d results tests/amazon.robot

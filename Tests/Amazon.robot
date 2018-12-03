@@ -16,6 +16,5 @@ User must sign in to check out
     # Click Button  css=#nav-search > form > div.nav-right > div > input
     Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input
     Sleep  3s
-    Click Link  css=#result_0 > div > div.a-fixed-left-grid > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a
-
+    Click Link  xpath=//*[@id="result_0"]/div/div[2]/div/div[2]/div[1]/div[1]/a
 *** Keywords ***
