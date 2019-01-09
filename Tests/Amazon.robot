@@ -1,6 +1,6 @@
 *** Settings ***
 Resource  Resources/AmazonApp.robot
-
+Resource  Resources/Common.robot
 *** Variables ***
 
 
@@ -9,10 +9,10 @@ User must sign in to check out
     [Documentation]  This is some basic info about the test
     [Tags]  Smoke
 
-    Begin Web Test
-    Search for Products
-    Select Product from Search Results
-    Add Product to Cart
-    Begin Chckout
-    End Web Test
+    Common.Begin Web Test
+    AmazonApp.Search for Products
+    AmazonApp.Select Product from Search Results
+    AmazonApp.Add Product to Cart
+    AmazonApp.Begin Checkout
+    Common.End Web Test
 

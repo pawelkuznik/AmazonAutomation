@@ -14,7 +14,7 @@ Select Product from Search Results
 Add Product to Cart
     Click Button  id=add-to-cart-button
     Wait Until Page Contains  Proceed to checkout
-Begin Chckout
+Begin Checkout
     Click Element  id=attach-sidesheet-checkout-button
     Page Should Contain Element  xpath=//*[@id="authportal-main-section"]/div[2]/div/div/form/div
     Wait Until Page Contains  Sign in
