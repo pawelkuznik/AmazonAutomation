@@ -1,6 +1,6 @@
 *** Settings ***
-Resource  Resources/AmazonApp.robot
-Resource  Resources/Common.robot
+Resource  ../Resources/AmazonApp.robot
+Resource  ../Resources/Common.robot
 *** Variables ***
 
 

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20190109 14:07:56.789">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20190109 15:10:25.499">
 <suite id="s1" name="Amazon" source="C:\development\robot-scripts\amazon\tests\amazon.robot">
 <test id="s1-t1" name="User must sign in to check out">
-<kw name="Begin Web Test">
+<kw name="Begin Web Test" library="Common">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190109 14:07:57.101" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20190109 14:07:57.100" endtime="20190109 14:08:00.927"></status>
+<msg timestamp="20190109 15:10:25.804" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190109 15:10:25.804" endtime="20190109 15:10:29.105"></status>
 </kw>
-<status status="PASS" starttime="20190109 14:07:57.100" endtime="20190109 14:08:00.928"></status>
+<status status="PASS" starttime="20190109 15:10:25.804" endtime="20190109 15:10:29.105"></status>
 </kw>
-<kw name="Search for Products">
+<kw name="Search for Products" library="AmazonApp">
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>http://www.amazon.com</arg>
 </arguments>
-<msg timestamp="20190109 14:08:00.941" level="INFO">Opening url 'http://www.amazon.com'</msg>
-<status status="PASS" starttime="20190109 14:08:00.941" endtime="20190109 14:08:07.393"></status>
+<msg timestamp="20190109 15:10:29.107" level="INFO">Opening url 'http://www.amazon.com'</msg>
+<status status="PASS" starttime="20190109 15:10:29.107" endtime="20190109 15:10:39.627"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>© 1996-2018, Amazon.com, Inc. or its affiliates</arg>
 </arguments>
-<status status="PASS" starttime="20190109 14:08:07.393" endtime="20190109 14:08:08.747"></status>
+<status status="PASS" starttime="20190109 15:10:39.627" endtime="20190109 15:10:40.140"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -36,103 +36,102 @@
 <arg>id=twotabsearchtextbox</arg>
 <arg>The Witcher Figure</arg>
 </arguments>
-<msg timestamp="20190109 14:08:08.748" level="INFO">Typing text 'The Witcher Figure' into text field 'id=twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20190109 14:08:08.747" endtime="20190109 14:08:10.059"></status>
+<msg timestamp="20190109 15:10:40.141" level="INFO">Typing text 'The Witcher Figure' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20190109 15:10:40.140" endtime="20190109 15:10:43.566"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
 </arguments>
-<msg timestamp="20190109 14:08:10.060" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20190109 14:08:10.059" endtime="20190109 14:08:16.953"></status>
+<msg timestamp="20190109 15:10:43.571" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20190109 15:10:43.568" endtime="20190109 15:10:51.128"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>results for "The Witcher Figure"</arg>
 </arguments>
-<status status="PASS" starttime="20190109 14:08:16.953" endtime="20190109 14:08:17.056"></status>
+<status status="PASS" starttime="20190109 15:10:51.128" endtime="20190109 15:10:51.226"></status>
 </kw>
-<status status="PASS" starttime="20190109 14:08:00.940" endtime="20190109 14:08:17.056"></status>
+<status status="PASS" starttime="20190109 15:10:29.106" endtime="20190109 15:10:51.226"></status>
 </kw>
-<kw name="Select Product from Search Results">
+<kw name="Select Product from Search Results" library="AmazonApp">
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="result_1"]/div/div/div/div[2]/div[1]/div[1]/a</arg>
 </arguments>
-<msg timestamp="20190109 14:08:17.057" level="INFO">Clicking link 'xpath=//*[@id="result_1"]/div/div/div/div[2]/div[1]/div[1]/a'.</msg>
-<status status="PASS" starttime="20190109 14:08:17.057" endtime="20190109 14:08:22.643"></status>
+<msg timestamp="20190109 15:10:51.228" level="INFO">Clicking link 'xpath=//*[@id="result_1"]/div/div/div/div[2]/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20190109 15:10:51.228" endtime="20190109 15:10:56.045"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Back to search results for</arg>
 </arguments>
-<status status="PASS" starttime="20190109 14:08:22.643" endtime="20190109 14:08:23.701"></status>
+<status status="PASS" starttime="20190109 15:10:56.046" endtime="20190109 15:10:56.140"></status>
 </kw>
-<status status="PASS" starttime="20190109 14:08:17.057" endtime="20190109 14:08:23.701"></status>
+<status status="PASS" starttime="20190109 15:10:51.227" endtime="20190109 15:10:56.141"></status>
 </kw>
-<kw name="Add Product to Cart">
+<kw name="Add Product to Cart" library="AmazonApp">
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>id=add-to-cart-button</arg>
 </arguments>
-<msg timestamp="20190109 14:08:23.705" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
-<status status="PASS" starttime="20190109 14:08:23.705" endtime="20190109 14:08:24.259"></status>
+<msg timestamp="20190109 15:10:56.143" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20190109 15:10:56.143" endtime="20190109 15:10:57.291"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Proceed to checkout</arg>
 </arguments>
-<status status="PASS" starttime="20190109 14:08:24.260" endtime="20190109 14:08:26.393"></status>
+<status status="PASS" starttime="20190109 15:10:57.292" endtime="20190109 15:10:59.176"></status>
 </kw>
-<status status="PASS" starttime="20190109 14:08:23.704" endtime="20190109 14:08:26.393"></status>
+<status status="PASS" starttime="20190109 15:10:56.142" endtime="20190109 15:10:59.176"></status>
 </kw>
-<kw name="Begin Chckout">
+<kw name="Begin Checkout" library="AmazonApp">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>id=attach-sidesheet-checkout-button</arg>
 </arguments>
-<msg timestamp="20190109 14:08:26.396" level="INFO">Clicking element 'id=attach-sidesheet-checkout-button'.</msg>
-<status status="PASS" starttime="20190109 14:08:26.396" endtime="20190109 14:08:28.297"></status>
+<msg timestamp="20190109 15:10:59.177" level="INFO">Clicking element 'id=attach-sidesheet-checkout-button'.</msg>
+<status status="PASS" starttime="20190109 15:10:59.177" endtime="20190109 15:11:00.701"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>xpath=//*[@id="authportal-main-section"]/div[2]/div/div/form/div</arg>
 </arguments>
-<msg timestamp="20190109 14:08:28.314" level="INFO">Current page contains element 'xpath=//*[@id="authportal-main-section"]/div[2]/div/div/form/div'.</msg>
-<status status="PASS" starttime="20190109 14:08:28.298" endtime="20190109 14:08:28.314"></status>
+<msg timestamp="20190109 15:11:00.720" level="INFO">Current page contains element 'xpath=//*[@id="authportal-main-section"]/div[2]/div/div/form/div'.</msg>
+<status status="PASS" starttime="20190109 15:11:00.701" endtime="20190109 15:11:00.720"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Sign in</arg>
 </arguments>
-<status status="PASS" starttime="20190109 14:08:28.315" endtime="20190109 14:08:28.329"></status>
+<status status="PASS" starttime="20190109 15:11:00.721" endtime="20190109 15:11:00.735"></status>
 </kw>
-<status status="PASS" starttime="20190109 14:08:26.395" endtime="20190109 14:08:28.329"></status>
+<status status="PASS" starttime="20190109 15:10:59.176" endtime="20190109 15:11:00.735"></status>
 </kw>
-<kw name="End Web Test">
+<kw name="End Web Test" library="Common">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190109 14:08:28.330" endtime="20190109 14:08:30.712"></status>
+<status status="PASS" starttime="20190109 15:11:00.736" endtime="20190109 15:11:03.093"></status>
 </kw>
-<status status="PASS" starttime="20190109 14:08:28.330" endtime="20190109 14:08:30.712"></status>
+<status status="PASS" starttime="20190109 15:11:00.736" endtime="20190109 15:11:03.093"></status>
 </kw>
 <doc>This is some basic info about the test</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" starttime="20190109 14:07:57.099" endtime="20190109 14:08:30.713" critical="yes"></status>
+<status status="PASS" starttime="20190109 15:10:25.803" endtime="20190109 15:11:03.094" critical="yes"></status>
 </test>
-<doc>This is some basic info about the whole suite</doc>
-<status status="PASS" starttime="20190109 14:07:56.800" endtime="20190109 14:08:30.715"></status>
+<status status="PASS" starttime="20190109 15:10:25.506" endtime="20190109 15:11:03.096"></status>
 </suite>
 <statistics>
 <total>
