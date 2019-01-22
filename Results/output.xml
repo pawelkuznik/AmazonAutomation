@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20190121 15:23:14.113">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20190122 10:50:05.132">
 <suite id="s1" name="Amazon" source="C:\development\amazonRobot\AmazonAutomation\Tests\Amazon.robot">
 <kw name="Insert Testing Data" library="Common" type="setup">
 <kw name="Log" library="BuiltIn">
@@ -7,10 +7,10 @@
 <arguments>
 <arg>I am setting up the test data...</arg>
 </arguments>
-<msg timestamp="20190121 15:23:14.341" level="INFO">I am setting up the test data...</msg>
-<status status="PASS" starttime="20190121 15:23:14.341" endtime="20190121 15:23:14.341"></status>
+<msg timestamp="20190122 10:50:05.368" level="INFO">I am setting up the test data...</msg>
+<status status="PASS" starttime="20190122 10:50:05.368" endtime="20190122 10:50:05.368"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:14.341" endtime="20190121 15:23:14.341"></status>
+<status status="PASS" starttime="20190122 10:50:05.367" endtime="20190122 10:50:05.368"></status>
 </kw>
 <test id="s1-t1" name="User must sign in to check out">
 <kw name="Begin Web Test" library="Common" type="setup">
@@ -20,14 +20,14 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190121 15:23:14.342" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20190121 15:23:14.342" endtime="20190121 15:23:16.656"></status>
+<msg timestamp="20190122 10:50:05.370" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190122 10:50:05.370" endtime="20190122 10:50:07.863"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190121 15:23:16.656" endtime="20190121 15:23:17.810"></status>
+<status status="PASS" starttime="20190122 10:50:07.863" endtime="20190122 10:50:08.983"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:14.342" endtime="20190121 15:23:17.810"></status>
+<status status="PASS" starttime="20190122 10:50:05.369" endtime="20190122 10:50:08.983"></status>
 </kw>
 <kw name="Search for Products" library="AmazonApp">
 <kw name="Load" library="LandingPage">
@@ -36,10 +36,10 @@
 <arguments>
 <arg>http://www.amazon.com</arg>
 </arguments>
-<msg timestamp="20190121 15:23:17.812" level="INFO">Opening url 'http://www.amazon.com'</msg>
-<status status="PASS" starttime="20190121 15:23:17.811" endtime="20190121 15:23:20.273"></status>
+<msg timestamp="20190122 10:50:08.984" level="INFO">Opening url 'http://www.amazon.com'</msg>
+<status status="PASS" starttime="20190122 10:50:08.984" endtime="20190122 10:50:14.086"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:17.811" endtime="20190121 15:23:20.273"></status>
+<status status="PASS" starttime="20190122 10:50:08.984" endtime="20190122 10:50:14.086"></status>
 </kw>
 <kw name="Verify Page Loaded" library="LandingPage">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -47,9 +47,9 @@
 <arguments>
 <arg>© 1996-2019, Amazon.com, Inc. or its affiliates</arg>
 </arguments>
-<status status="PASS" starttime="20190121 15:23:20.274" endtime="20190121 15:23:20.399"></status>
+<status status="PASS" starttime="20190122 10:50:14.087" endtime="20190122 10:50:14.211"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:20.273" endtime="20190121 15:23:20.399"></status>
+<status status="PASS" starttime="20190122 10:50:14.086" endtime="20190122 10:50:14.211"></status>
 </kw>
 <kw name="Search for Products" library="TopNav">
 <kw name="Enter Search Term" library="TopNav">
@@ -59,10 +59,10 @@
 <arg>id=twotabsearchtextbox</arg>
 <arg>The Witcher Figure</arg>
 </arguments>
-<msg timestamp="20190121 15:23:20.401" level="INFO">Typing text 'The Witcher Figure' into text field 'id=twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20190121 15:23:20.401" endtime="20190121 15:23:21.566"></status>
+<msg timestamp="20190122 10:50:14.212" level="INFO">Typing text 'The Witcher Figure' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20190122 10:50:14.212" endtime="20190122 10:50:18.062"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:20.400" endtime="20190121 15:23:21.566"></status>
+<status status="PASS" starttime="20190122 10:50:14.212" endtime="20190122 10:50:18.063"></status>
 </kw>
 <kw name="Submit Search" library="TopNav">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -70,12 +70,12 @@
 <arguments>
 <arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
 </arguments>
-<msg timestamp="20190121 15:23:21.567" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20190121 15:23:21.566" endtime="20190121 15:23:24.550"></status>
+<msg timestamp="20190122 10:50:18.063" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20190122 10:50:18.063" endtime="20190122 10:50:22.507"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:21.566" endtime="20190121 15:23:24.550"></status>
+<status status="PASS" starttime="20190122 10:50:18.063" endtime="20190122 10:50:22.507"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:20.400" endtime="20190121 15:23:24.551"></status>
+<status status="PASS" starttime="20190122 10:50:14.211" endtime="20190122 10:50:22.507"></status>
 </kw>
 <kw name="Verify Search Completed" library="SearchResults">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -83,44 +83,44 @@
 <arguments>
 <arg>results for "The Witcher Figure"</arg>
 </arguments>
-<status status="PASS" starttime="20190121 15:23:24.552" endtime="20190121 15:23:24.600"></status>
+<status status="PASS" starttime="20190122 10:50:22.508" endtime="20190122 10:50:22.580"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:24.551" endtime="20190121 15:23:24.600"></status>
+<status status="PASS" starttime="20190122 10:50:22.507" endtime="20190122 10:50:22.581"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:17.811" endtime="20190121 15:23:24.600"></status>
+<status status="PASS" starttime="20190122 10:50:08.984" endtime="20190122 10:50:22.581"></status>
 </kw>
 <kw name="Select Product from Search Results" library="AmazonApp">
 <kw name="Click Product Link" library="SearchResults">
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>css=#result_2 &gt; div &gt; div &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a &gt; h2</arg>
+<arg>xpath=//*[@id="leftNavContainer"]/ul[1]/div/li[1]/span/ul/div/li[2]/span/a/span</arg>
 </arguments>
-<msg timestamp="20190121 15:23:24.604" level="INFO">Clicking link 'css=#result_2 &gt; div &gt; div &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a &gt; h2'.</msg>
+<msg timestamp="20190122 10:50:22.586" level="INFO">Clicking element 'xpath=//*[@id="leftNavContainer"]/ul[1]/div/li[1]/span/ul/div/li[2]/span/a/span'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190121 15:23:25.423" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20190121 15:23:24.624" endtime="20190121 15:23:25.423"></status>
+<msg timestamp="20190122 10:50:23.337" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190122 10:50:22.628" endtime="20190122 10:50:23.338"></status>
 </kw>
-<msg timestamp="20190121 15:23:25.428" level="FAIL">Link with locator 'css=#result_2 &gt; div &gt; div &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a &gt; h2' not found.</msg>
-<status status="FAIL" starttime="20190121 15:23:24.604" endtime="20190121 15:23:25.428"></status>
+<msg timestamp="20190122 10:50:23.347" level="FAIL">Element with locator 'xpath=//*[@id="leftNavContainer"]/ul[1]/div/li[1]/span/ul/div/li[2]/span/a/span' not found.</msg>
+<status status="FAIL" starttime="20190122 10:50:22.586" endtime="20190122 10:50:23.347"></status>
 </kw>
-<status status="FAIL" starttime="20190121 15:23:24.604" endtime="20190121 15:23:25.428"></status>
+<status status="FAIL" starttime="20190122 10:50:22.585" endtime="20190122 10:50:23.347"></status>
 </kw>
-<status status="FAIL" starttime="20190121 15:23:24.603" endtime="20190121 15:23:25.428"></status>
+<status status="FAIL" starttime="20190122 10:50:22.585" endtime="20190122 10:50:23.347"></status>
 </kw>
 <kw name="End Web Test" library="Common" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190121 15:23:25.445" endtime="20190121 15:23:27.892"></status>
+<status status="PASS" starttime="20190122 10:50:23.349" endtime="20190122 10:50:25.873"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:25.444" endtime="20190121 15:23:27.892"></status>
+<status status="PASS" starttime="20190122 10:50:23.348" endtime="20190122 10:50:25.874"></status>
 </kw>
 <doc>This is some basic info about the test</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="FAIL" starttime="20190121 15:23:14.341" endtime="20190121 15:23:27.919" critical="yes">Link with locator 'css=#result_2 &gt; div &gt; div &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a &gt; h2' not found.</status>
+<status status="FAIL" starttime="20190122 10:50:05.368" endtime="20190122 10:50:25.874" critical="yes">Element with locator 'xpath=//*[@id="leftNavContainer"]/ul[1]/div/li[1]/span/ul/div/li[2]/span/a/span' not found.</status>
 </test>
 <kw name="Cleanup Testing Data" library="Common" type="teardown">
 <kw name="Log" library="BuiltIn">
@@ -128,12 +128,12 @@
 <arguments>
 <arg>I am cleaning up th test data...</arg>
 </arguments>
-<msg timestamp="20190121 15:23:27.923" level="INFO">I am cleaning up th test data...</msg>
-<status status="PASS" starttime="20190121 15:23:27.922" endtime="20190121 15:23:27.923"></status>
+<msg timestamp="20190122 10:50:25.877" level="INFO">I am cleaning up th test data...</msg>
+<status status="PASS" starttime="20190122 10:50:25.877" endtime="20190122 10:50:25.877"></status>
 </kw>
-<status status="PASS" starttime="20190121 15:23:27.922" endtime="20190121 15:23:27.923"></status>
+<status status="PASS" starttime="20190122 10:50:25.877" endtime="20190122 10:50:25.878"></status>
 </kw>
-<status status="FAIL" starttime="20190121 15:23:14.118" endtime="20190121 15:23:27.923"></status>
+<status status="FAIL" starttime="20190122 10:50:05.135" endtime="20190122 10:50:25.878"></status>
 </suite>
 <statistics>
 <total>

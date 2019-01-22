@@ -7,4 +7,4 @@ Verify Search Completed
 
 Click Product Link
     #[Documentation]  Clicks on the first product in the search results
-    Click Link   css=#result_2 > div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a > h2
+    Click Element  xpath=//*[@id="leftNavContainer"]/ul[1]/div/li[1]/span/ul/div/li[2]/span/a/span
